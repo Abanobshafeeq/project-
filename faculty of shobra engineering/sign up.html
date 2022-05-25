@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/sign up.css">
+  <link rel="shortcut icon" href="img/SHOBRA.jpg">
+  <script src="js/js1.js"></script>
+  <title>sign up</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div id="menu">
+    <img src="img/SHOBRA.jpg" alt="ci" width="60px" height="60px" style="margin-left: 20px;">
+    <ul id="date">
+        <li><a href="#">تسجيل دخول</a>
+            <ul id="date">
+                <li><a href="#">تسجيل دخول</a> </li>
+                <li><a href="log in.html"><b>sign in </b></a>
+                </li>
+                <li><a href="sign up.html"><b>sign up </b></a>
+                </li>
+            </ul>
+        </li>
+
+        </li>
+        <li><a href="ادارات.html"><b>الادارات</b></a>
+            <ul id="date">
+                <li><a href="ادارات.html"><b>الادارات</b></a></li>
+            </ul>
+        </li>
+        <li><a href="اقسام.html"><b>اقسام الكلية</b></a>
+            <ul id="date">
+                <li><a href="اقسام.html"><b>اقسام الكلية</b></li>
+            </ul>
+        </li>
+        <li><a href="مزيد عن الكلية.html"><b>مزيد عن الكلية</b></a>
+            <ul id="date">
+                <li><a href="مزيد عن الكلية.html"><b>مزيد عن الكلية</b></a></li>
+            </ul>
+        </li>
+        <li><a href="#"><b>الصفحة الرئيسية</b></a>
+            <ul id="date">
+                <li><a href="main.html">الصفحة الرئيسية</a></li>
+                <!-- <li><a href="#">ورش العمل</a></li> -->
+            </ul>
+
+    </ul>
+</div><br><br>
+  <!-- <div>
+    <img src="img/banha.jpg" alt="" class="ba">
+    <button id="main"><a href="main.html">الصفحة الرئسية</a></button>
+    <img src="img/SHOBRA.jpg" alt="" class="sh">
+  </div> -->
+  <form action="" method="get" style="border:1px solid #ccc">
+    <div class="container">
+      <h1 >Sign Up</h1>
+      <p
+        style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: larger;">
+        Please enter all required information to create an account.</p>
+      <hr>
+      <label for="firstname"><b>First Name</b><label>
+          <input type="text" placeholder="First Name" name="firstname" required>
+
+          <label for="lastname"><b>Last Name</b><label>
+              <input type="text" placeholder="Last Name" name="lastname" required>
+
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="examble10@gmail.com" required>
+
+              <label for="email"><b>Address</b></label>
+              <input type="text" placeholder="Enter Address" name="address" required>
+
+              <label for="Phone Number"><b>Phone Number</b></label>
+              <input type="text" placeholder="Enter Phone Number" name="Phone Number" pattern="[0-9]{11}" maxlength="11"
+                minlength="11" title="Ex:01xxxxxxxxx" required>
+
+              <label for="gender"><b>Gender</b></label>
+              <div class="gender"><br>
+                <input type="radio" name="gender" value="male" id="male" required>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="female" id="female" required>
+                <label for="female">Female</label>
+                <br>
+                <br>
+              </div>
+              <label for="birthday"><b>Birthday:</b></label>
+              <div class="gender"><br>
+                <input type="date" id="birthday" name="birthday" required><br><br>
+              </div>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="passward" id="psw" name="psw"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                title="Must contain at least one number , start one uppercase , lowercase letter , special character such as(-_#&\*\.) ,  8 characters only and you Must not put spases"
+                required>
+
+
+
+              <b> By creating an account you agree to our </b> <b style="color: blue;">Terms & Privacy.</b>
+              <input type="checkbox" id="checkbox" required>
+              <label for="checkbox">I agree</label>
+
+              <div class="clearfix" id="abanoub">
+                <button type="button" class="cancelbtn">Cancel</button>
+                <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+    </div>
+    <div id="message">
+      <h3>Password must contain the following:</h3>
+      <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+      <p id="capital" class="invalid">A <b>First letter must be capital </b> </p>
+      <p id="number" class="invalid">A <b>number</b></p>
+      <p id="special" class="invalid">A <b>one special character</b></p>
+      <p id="space" class="valid"> the <b> password does not contain a space</b></p>
+      <p id="length" class="invalid">Equal <b>8 characters</b></p>
+    </div>
+  </form>
+  <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+  <footer id="footer">
+    <div class="container">
+      <div class="up-side">
+        <div class="contact">
+          <ul>
+            <li>تليفون: 0842154835</li>
+            <li>فاكس: 0842154835</li>
+            <li>البريد الإلكترونى</li>
+            <li>coinf@Shobra.edu.eg</li>
+          </ul>
+        </div>
+        <div class="gif">
+          <img src="img/SHOBRA.jpg" alt="" height="73px">
+        </div>
+        <div class="about">
+          <ul>
+            <li>نشأة الكلية</li>
+            <li>شعار الكلية</li>
+            <li>رسالة الكلية</li>
+            <li>التعريف بالكلية</li>
+          </ul>
+        </div>
+      </div>
+      <p style="text-align: center;">جميع الحقوق محفوظة الى هندسة شبرا &copy; 2022</p>
+    </div>
+  </footer>
+  <script src="java.js"></script>
+
+
+</body>
+
+</html>
